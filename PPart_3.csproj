@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net5.0-windows</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<EnableDefaultPageItems>false</EnableDefaultPageItems>
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Page Include="MainWindow.xaml" />
+		<Page Include="RecipeCollection.xaml" />
+		<Page Include="RecipeCreator.xaml" />
+		<Page Include="RecipeViewer.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Include="MainWindow.xaml.cs" />
+		<Compile Include="Models\Ingredient.cs" />
+		<Compile Include="Models\Recipe.cs" />
+		<Compile Include="Models\RecipeData.cs" />
+		<Compile Include="Models\Step.cs" />
+		<Compile Include="RecipeCollection.xaml.cs" />
+		<Compile Include="RecipeCreator.xaml.cs" />
+		<Compile Include="RecipeViewer.xaml.cs" />
+	</ItemGroup>
+</Project>
+
